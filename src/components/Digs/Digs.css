@@ -1,0 +1,48 @@
+/* Digs Container */
+.digs-container {
+    padding: 20px;
+  }
+  
+  /* Digs Heading */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Digs List */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Add a bit of spacing between list items */
+  li + li {
+    margin-top: 5px;
+  }
+  
+  /* Optional: Add some responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    li {
+      padding: 8px;
+      font-size: 16px;
+    }
+  }
+  

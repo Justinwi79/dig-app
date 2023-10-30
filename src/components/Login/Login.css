@@ -1,0 +1,170 @@
+body {
+  background-color: rgba(241, 241, 241, 1);
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 590px;
+  width: 100%;
+  height: 580px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  background-color: rgba(56, 41, 51, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.heading {
+  color: rgba(164, 180, 148, 1);
+  font-size: 80px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-display: "\f032";
+}
+
+
+.input1 {
+  display: flex;
+  font-size: 30px;
+  height: 53px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  
+}
+
+button {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  font-size: 30px;
+  height: 53px; 
+  width: 400px; 
+  padding: 0px;
+  background-color: rgba(164, 180, 148, 1);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+}
+
+button.login-button {
+  color: black; 
+  background-color: rgba(164, 180, 148, 1);
+  border-radius: 25px;
+}
+
+button.google-button {
+  display: flex; 
+  color: black; 
+  text-align: center;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.error-message {
+  color: red;
+  font-style: '\f032';
+  font-size: 20px;
+
+}
+
+.forgot {
+  font-size: 20px;
+  color: white; 
+  margin-top: 5px;
+}
+
+.separator {
+  display: flex;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  border-top: 1px solid rgb(252, 251, 251);
+  width: 75%; 
+  position: absolute;
+  top: 50%;
+}
+
+.separator::before {
+  color: white;
+  right: 100%; 
+  margin-right: 10px;
+}
+
+.separator::after {
+  color: white;
+  left: 100%; 
+  margin-left: 10px;
+}
+
+.google-icon {
+  width: 30px; 
+  margin-right: 10px;
+}
+
+
+
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 10px;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .15em;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .login-container {
+    padding: 30px;
+    margin-right: 25px;
+    max-width: 85%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .input1 {
+    font-size: 20px;
+  }
+}

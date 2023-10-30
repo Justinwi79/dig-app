@@ -1,0 +1,47 @@
+/* CreateUser Container */
+.create-user-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* CreateUser Heading */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Register Button */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Back to Login Link */
+  .back-to-login {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #0074d9;
+    text-decoration: none;
+  }
+  
