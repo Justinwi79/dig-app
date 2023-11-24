@@ -1,14 +1,47 @@
+body {
+  background-color: rgba(241, 241, 241, 1);
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    font-size: 30px;
+    height: 50vh;
+  }
+
+  .header {
+    font-size: 50px;
   }
   
   h1 {
     margin-bottom: 20px;
+    font-size: 30px;
   }
+
+
+.input1 {
+  display: flex;
+  font-size: 30px;
+  height: 53px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  
+}
+
+button.google-button {
+  display: flex; 
+  color: white; 
+  text-align: center;
+  background-color: rgb(30,144,255);
+  border-radius: 25px;
+}
   
   a {
     margin: 10px;
@@ -20,4 +53,4 @@
     cursor: pointer;
   }
   
-  
+ 

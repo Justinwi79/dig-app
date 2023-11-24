@@ -6,7 +6,6 @@ function Digs() {
   const [digs, setDigs] = useState([]);
 
   useEffect(() => {
-    // Fetch all digs from Firestore
     const fetchDigs = async () => {
       const digsRef = firestore.collection("digs");
       const snapshot = await digsRef.get();
@@ -19,7 +18,7 @@ function Digs() {
 
   return (
     <div>
-      <h1>All Digs</h1>
+      <h1>Click Dig to View</h1>
       <ul>
         {digs.map((dig, index) => (
           <li

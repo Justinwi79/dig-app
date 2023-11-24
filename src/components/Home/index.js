@@ -5,10 +5,9 @@ import './Home.css';
 function Home() {
   return (
     <div className="main-container">
-      <h1>Main Page</h1>
+      <h1>Choose Path</h1>
       <Link to="/digs">View Existing Digs</Link>
       <Link to="/create">Add New Dig</Link>
-      {/* Add components for existing digs and add new dig here */}
     </div>
   );
 }

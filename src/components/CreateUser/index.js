@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import { auth } from '../../firebase';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import "./CreateUser.css";
 import { useNavigate } from "react-router-dom";
@@ -12,22 +11,16 @@ function CreateUser() {
   const auth = getAuth();
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Signed in
-      //const user = userCredential.user;
-      // ...
+     
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      // ..
       if (errorCode === "auth/user-not-found") {
-        // Handle user not found error
         console.error("User not found:", errorMessage);
       } else if (errorCode === "auth/wrong-password") {
-        // Handle wrong password error
         console.error("Wrong password:", errorMessage);
       } else {
-        // Handle other errors
         console.error("Login error:", errorMessage);
       }
     });
@@ -35,10 +28,8 @@ function CreateUser() {
   const handleRegister = async () => {
     try {
       await auth.createUserWithEmailAndPassword(email, password);
-      // Redirect to the main page after successful registration
       history("/login");
     } catch (error) {
-      // Handle registration error
     }
   };
 

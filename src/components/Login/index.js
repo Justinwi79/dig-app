@@ -17,11 +17,10 @@ function Login() {
 
   const handleEmailPasswordLogin = async () => {
     try {
-      const auth = getAuth(); // Get the authentication instance
+      const auth = getAuth();
       await signInWithEmailAndPassword(auth, email, password);
       navigate("/home");
     } catch (error) {
-      // Handle login error
       const errorMessage = error.message;
       console.error("Login error:", errorMessage);
       setError(error.message);
@@ -65,7 +64,7 @@ function Login() {
         </button>
         
 
-        <div class="separator">or</div>
+        <div className="separator">or</div>
 
         <button onClick={handleGoogleLogin} className="google-button">
           <img src={Google2} alt="GoogleP" className="google-icon" />
