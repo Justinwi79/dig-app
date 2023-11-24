@@ -10,15 +10,7 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDHRKYx7LkSuNRllCGiayN5pQMvwa_-Yo8",
-  authDomain: "dig-app-792ae.firebaseapp.com",
-  databaseURL: "https://dig-app-792ae-default-rtdb.firebaseio.com",
-  projectId: "dig-app-792ae",
-  storageBucket: "dig-app-792ae.appspot.com",
-  messagingSenderId: "226673700243",
-  appId: "1:226673700243:web:9f37a3d2cb7837aa710c66",
-  measurementId: "G-EHTPGPSLD3"
-  
+    
 };
 
 firebase.initializeApp(firebaseConfig);
